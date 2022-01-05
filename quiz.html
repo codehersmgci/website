@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <link rel="stylesheet" type = "text/css" href = "style.css">
+    <script src = "/script.js" defer> </script>
+  </head>
+<body>
+  
+  <h1>
+    Quiz time
+  </h1>
+  
+  <heading>
+    <nav>
+      <ul>
+        <li><a href = "index.html">Home</a></li>
+        <li><a href = "lists.html">Lists</a></li>
+        <li><a href = "gallery.html">Gallery</a></li>
+        <li><a href = "quiz.html">Quiz</a></li>
+      </ul>
+    </nav>
+  </heading>
+  <p>
+    enjoy quiz
+  </p>
+  
+  <form id = "quiz" name = "quiz" >
+    <p class = "questions">
+      What is a fox?
+    </p>
+    <input id="textbox" type="text" name="question1" />
+    
+    <p class = "questions">
+      What color is the typical fox?
+    </p>
+    <input type = "radio" class = "mc" name = "question2"  value = "blue"/>
+           blue
+    </br>
+     <input type = "radio" class = "mc" name = "question2"  value = "orange"/>
+           orange
+    </br>
+   </br>
+  <input id = "button" type = "button"  value = "I'm finished!" onclick="check();"/>
+  </form>
+
+<div id="after_submit">
+  <p id = "number_correct"></p>
+  <p id = "message"></p>
+  <img id="picture"/>
+</div>
+
+  </body>
+  
+  
+</html>
